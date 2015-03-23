@@ -14,8 +14,8 @@ for Running shorty you need:
 
 > **Note:**
 You can also use:
-	 >  -   free node.js hosting plan from [Heroku](http://heroku.com/)
-	>  -  free redis 25mb plan from [Redis lab](http://redislabs.com") , it can store about 75k short urls
+	  -   free node.js hosting plan from [Heroku](http://heroku.com/)
+	  -  free redis 25mb plan from [Redis lab](http://redislabs.com") , it can store about 75k short urls
 
 **Step 2:**
 
