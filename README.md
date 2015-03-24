@@ -1,7 +1,10 @@
 Shorty - URL shorter in node.js , express and Redis
 =========================================
 
-Shorty is a simple short URL generator build using Node.js , Express.js and Redis
+Shorty is a simple short URL generator built using Node.js , Express.js and Redis
+
+![Shorty](https://farm9.staticflickr.com/8742/16730466119_6f0b290769.jpg)
+
 
 Lets Get it Running
 ----------------------------
