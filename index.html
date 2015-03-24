@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Shorty by Waterloo</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/Waterloo/shorty">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/Waterloo/shorty/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/Waterloo/shorty/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Shorty</h1>
+          <p>A sample URL shorter like bit.ly and goo.gl in Node.js  using Express and Redis</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/Waterloo">Waterloo</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>
+<a id="shorty---url-shorter-in-nodejs--express-and-redis" class="anchor" href="#shorty---url-shorter-in-nodejs--express-and-redis" aria-hidden="true"><span class="octicon octicon-link"></span></a>Shorty - URL shorter in node.js , express and Redis</h1>
+
+<p>Shorty is a simple short URL generator build using Node.js , Express.js and Redis</p>
+
+<h2>
+<a id="lets-get-it-running" class="anchor" href="#lets-get-it-running" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lets Get it Running</h2>
+
+<p><strong>Step 1</strong></p>
+
+<p>for Running shorty you need:</p>
+
+<ul>
+<li><a href="https://github.com/joyent/node/wiki/installation" title="Installing Node.js">Node.js</a></li>
+<li><a href="http://redis.io/topics/quickstart" title="Installing Node.js">Redis</a></li>
+</ul>
+
+<blockquote>
+<p><strong>Note:</strong>
+You can also use:
+      -   free node.js hosting plan from <a href="http://heroku.com/">Heroku</a>
+      -  free redis 25mb plan from <a href="http://redislabs.com%22">Redis lab</a> , it can store about 75k short urls</p>
+</blockquote>
+
+<p><strong>Step 2:</strong></p>
+
+<p>Open Terminal and navigate to directory containing <strong>shorty</strong> source code and install all the required modules for <strong>shorty</strong> by typing </p>
+
+<blockquote>
+<p><strong>npm install</strong></p>
+</blockquote>
+
+<p><strong>Step 3:</strong>
+    open the <strong>app.js</strong> in an IDE or  text editor and replace the <strong>port</strong> to the port running the Redis server and <strong>Endpoint</strong> to the host running the Redis server </p>
+
+<blockquote>
+<p>var client = redis.createClient(port, 'endpoint');</p>
+</blockquote>
+
+<p>Replace the password with your Redis server password</p>
+
+<blockquote>
+<p>client.auth('password', function (err)</p>
+</blockquote>
+
+<p>you can also change the port of your express app by changing </p>
+
+<blockquote>
+<p>app.set('port', (process.env.PORT || your_port));</p>
+</blockquote>
+
+<p>from the  Shorty Directory run your app by typing</p>
+
+<blockquote>
+<p>node app.js</p>
+</blockquote>
+
+<p>and you can see your app from the URL displayed in the terminal.</p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
