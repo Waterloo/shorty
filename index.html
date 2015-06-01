@@ -1,105 +1,146 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Shorty by Waterloo</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
     <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
+    <title>Shorty by Waterloo</title>
   </head>
+
   <body>
-      <div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/Waterloo/shorty">View On GitHub</a></li>
-          <li class="downloads"><a href="https://github.com/Waterloo/shorty/zipball/master">ZIP</a></li>
-          <li class="downloads"><a href="https://github.com/Waterloo/shorty/tarball/master">TAR</a></li>
-          <li class="title">DOWNLOADS</li>
-        </nav>
-      </div><!-- end header -->
+    <header>
+      <div class="inner">
+        <h1>Shorty</h1>
+        <h2>A sample URL shorter like bit.ly and goo.gl in Node.js  using Express and Redis</h2>
+        <a href="https://github.com/Waterloo/shorty" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
 
-    <div class="wrapper">
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a id="shorty---url-shortner-in-nodejs" class="anchor" href="#shorty---url-shortner-in-nodejs" aria-hidden="true"><span class="octicon octicon-link"></span></a>Shorty - URL shortner in node.js</h1>
 
-      <section>
-        <div id="title">
-          <h1>Shorty</h1>
-          <p>A sample URL shorter like bit.ly and goo.gl in Node.js  using Express and Redis</p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/Waterloo">Waterloo</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
-        </div>
+<p>Shorty is a simple short URL generator built using Node.js , Express.js and Redis</p>
 
-        <h1>
-<a id="shorty---url-shorter-in-nodejs--express-and-redis" class="anchor" href="#shorty---url-shorter-in-nodejs--express-and-redis" aria-hidden="true"><span class="octicon octicon-link"></span></a>Shorty - URL shorter in node.js , express and Redis</h1>
-
-<p>Shorty is a simple short URL generator build using Node.js , Express.js and Redis</p>
+<p><img src="https://farm9.staticflickr.com/8742/16730466119_6f0b290769.jpg" alt="Shorty"></p>
 
 <h2>
-<a id="lets-get-it-running" class="anchor" href="#lets-get-it-running" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lets Get it Running</h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
 
-<p><strong>Step 1</strong></p>
-
-<p>for Running shorty you need:</p>
+<p><strong>Pre-requistes</strong>
+for Running shorty you need:</p>
 
 <ul>
 <li><a href="https://github.com/joyent/node/wiki/installation" title="Installing Node.js">Node.js</a></li>
-<li><a href="http://redis.io/topics/quickstart" title="Installing Node.js">Redis</a></li>
-</ul>
+<li>
+<p><a href="http://redis.io/topics/quickstart" title="Installing Redis">Redis</a></p>
 
 <blockquote>
 <p><strong>Note:</strong>
-You can also use:
-      -   free node.js hosting plan from <a href="http://heroku.com/">Heroku</a>
-      -  free redis 25mb plan from <a href="http://redislabs.com%22">Redis lab</a> , it can store about 75k short urls</p>
+You can also use:</p>
 </blockquote>
+</li>
+<li>free node.js hosting plan from <a href="http://heroku.com/">Heroku</a>
+</li>
+<li>free redis 25mb plan from <a href="http://redislabs.com%22">Redis lab</a> , it can store about 75000 short urls</li>
+</ul>
 
-<p><strong>Step 2:</strong></p>
+<p>*<em>Step 1 : *</em></p>
 
-<p>Open Terminal and navigate to directory containing <strong>shorty</strong> source code and install all the required modules for <strong>shorty</strong> by typing </p>
+<p>Open Terminal (Ctrl+Alt+T on most Linux distributions) and clone the <strong>shorty</strong> repository from here</p>
 
 <blockquote>
-<p><strong>npm install</strong></p>
+<p>git clone <a href="https://github.com/Waterloo/shorty">https://github.com/Waterloo/shorty</a></p>
 </blockquote>
 
-<p><strong>Step 3:</strong>
-    open the <strong>app.js</strong> in an IDE or  text editor and replace the <strong>port</strong> to the port running the Redis server and <strong>Endpoint</strong> to the host running the Redis server </p>
+<p>*<em>Step 2 : *</em></p>
+
+<p>Navigate into the cloned directory</p>
 
 <blockquote>
+<p>cd shorty</p>
+</blockquote>
+
+<p>*<em>Step 3 : *</em></p>
+
+<p>Install the required modules from Node.js for <strong>shorty</strong></p>
+
+<blockquote>
+<p>npm install</p>
+</blockquote>
+
+<p>*<em>Step 4 : *</em></p>
+
+<p>If you have installed a Redis server, you have to manually start the server.</p>
+
+<blockquote>
+<p>redis-server</p>
+</blockquote>
+
+<p>Note the port number from the commands that appear on the screen.</p>
+
+<p>If you're using a hosted Redis service, the default port number would be 6379. This will be detailed on the service provider's end when you sign up for the service.</p>
+
+<p>Once you get your <strong><em>redis-server</em></strong> running, you won't have a shell ($) prompt. To get the shell prompt back, you could use the <strong>Ctrl+Z</strong> combination to push the redis-server to the background and get your shell prompt back.</p>
+
+<p>*<em>Step 5 : *</em></p>
+
+<p>Open <strong>app.js</strong> in a text editor of your choice (or an IDE) and replace the <strong>port</strong> to the port running the Redis server and <strong>endpoint</strong> to the host running the Redis server.</p>
+
+<blockquote>
+<p>Note : if you have <em>redis-server</em> running locally on your machine, the endpoint should be the loopback address of your localhost : 127.0.0.1.
+If you have a hosted redis service, the provider will provide you with a hostname which you can use as the endpoint.</p>
+
 <p>var client = redis.createClient(port, 'endpoint');</p>
 </blockquote>
 
-<p>Replace the password with your Redis server password</p>
+<p>Replace the <em>password</em> with your Redis server password</p>
 
 <blockquote>
 <p>client.auth('password', function (err)</p>
 </blockquote>
 
-<p>you can also change the port of your express app by changing </p>
+<p>*<em>Step 6 : *</em></p>
 
-<blockquote>
-<p>app.set('port', (process.env.PORT || your_port));</p>
-</blockquote>
-
-<p>from the  Shorty Directory run your app by typing</p>
+<p>With all the setup ready to roll, you can now run shorty from the terminal</p>
 
 <blockquote>
 <p>node app.js</p>
 </blockquote>
 
-<p>and you can see your app from the URL displayed in the terminal.</p>
-      </section>
+<p>The terminal will show you the address from where you can access the <strong><em>shorty</em></strong> interface.</p>
 
+<p>Have fun shortening your favorite URLs with <strong><em>shorty</em></strong></p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/Waterloo/shorty/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/Waterloo/shorty/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/Waterloo/shorty"></a> is maintained by <a href="https://github.com/Waterloo">Waterloo</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
+
+  
   </body>
 </html>
